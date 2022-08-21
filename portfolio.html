@@ -25,8 +25,8 @@
     <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
-          <a class="logo header-logo link" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+          <a class="logo page-header__logo link" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
           >
 
           <ul class="menu-list list">
@@ -259,59 +259,61 @@
 
     <!-- FOOTER -->
     <footer class="page-footer">
-      <div class="container footer-container">
-        <div class="adress-block">
-          <a class="logo footer-logo link" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+      <div class="container page-footer__container">
+        <div>
+          <a class="logo page-footer__logo link" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <address>
             <ul class="adress-list list">
-              <li class="adress-item">
+              <li class="adress-list__item">
                 <a
-                  class="address link"
+                  class="adress-list__link link adress-list__link_main"
                   href="https://goo.gl/maps/6pip9bkwr5iF757Q7"
                   target="_blank"
                   rel="noopener noreferrer"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="adress-item">
-                <a class="contact link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="adress-list__item">
+                <a class="adress-list__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="adress-item">
-                <a class="contact link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="adress-list__item">
+                <a class="adress-list__link link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="social-block">
-          <p class="block-desk">Приєднуйтесь</p>
+        <div class="block">
+          <p class="block__desk">Приєднуйтесь</p>
           <ul class="social-list list">
             <li>
-              <a href="" class="social-list-link social-list-link-theme-dark">
-                <svg class="social-list-icon" width="20" height="20">
+              <a href="" class="social-list__link social-list__link_theme_dark">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="social-list-link social-list-link-theme-dark">
-                <svg class="social-list-icon" width="20" height="20">
+              <a href="" class="social-list__link social-list__link_theme_dark">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="social-list-link social-list-link-theme-dark">
-                <svg class="social-list-icon" width="20" height="20">
+              <a href="" class="social-list__link social-list__link_theme_dark">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="social-list-link social-list-link-theme-dark">
-                <svg class="social-list-icon" width="20" height="20">
+              <a href="" class="social-list__link social-list__link_theme_dark">
+                <svg class="social-list__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -319,13 +321,13 @@
           </ul>
         </div>
 
-        <div class="form-block">
-          <p class="block-desk">Підпишіться на розсилку</p>
+        <div class="block">
+          <p class="block__desk">Підпишіться на розсилку</p>
           <form class="footer-form">
-            <input type="email" name="user-email" class="footer-form-input" placeholder="E-mail" />
-            <button type="submit" class="btn btn-with-icon">
+            <input type="email" name="user-email" class="footer-form__input" placeholder="E-mail" />
+            <button type="submit" class="btn btn_with_icon">
               Підписатися
-              <svg class="btn-icon" width="24" height="24">
+              <svg class="btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
