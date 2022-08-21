@@ -107,6 +107,18 @@ body {
   color: var(--accent-color);
 }
 
+.header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  color: var(--black-color);
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+  color: var(--white-color);
+}
+
 .title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -368,13 +380,6 @@ body {
   align-items: center;
 }
 
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-  color: var(--black-color);
-}
-
 .menu-item:not(:last-child),
 .auth-item:not(:last-child) {
   margin-right: 50px;
@@ -600,11 +605,6 @@ body {
 .footer-container {
   display: flex;
   justify-content: space-between;
-}
-
-.footer-logo {
-  margin-bottom: 20px;
-  color: var(--white-color);
 }
 
 .adress-list {

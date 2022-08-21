@@ -15,14 +15,6 @@
   align-items: center;
 }
 
-.header-logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-right: 93px;
-
-  color: var(--black-color);
-}
-
 .menu-item,
 .auth-item {
   &:not(:last-child) {
