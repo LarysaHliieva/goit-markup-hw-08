@@ -1,43 +1,43 @@
 .social-list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .social-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    transition: background-color var(--duration) var(--timing-func);
+  transition: background-color var(--duration) var(--timing-func);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .social-list-link-theme-light {
-    color: var(--icon-color);
-    background-color: var(--white-color);
+  color: var(--icon-color);
+  background-color: var(--white-color);
 }
 
 .social-list-link-theme-dark {
-    color: var(--white-color);
-    background-color: var(--icon-bg-color-theme-dark);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--accent-color);
+  color: var(--white-color);
+  background-color: var(--icon-bg-color-theme-dark);
 }
 
 .social-list-icon {
-    fill: currentColor;
+  fill: currentColor;
 
-    transition: fill var(--duration) var(--timing-func);
-}
+  transition: fill var(--duration) var(--timing-func);
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
+  .social-list-link:hover &,
+  .social-list-link:focus & {
     fill: var(--white-color);
+  }
 }

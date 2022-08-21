@@ -1,50 +1,50 @@
 .about {
-    background-color: var(--secondary-bg-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .team-item {
-    flex-basis: calc((100% - 3 * var(--item-set-gap)) / 4);
+  flex-basis: calc((100% - 3 * var(--item-set-gap)) / 4);
 
-    border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 
-    background-color: var(--white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
-.team-item:not(:nth-child(4n)) {
+  &:not(:nth-child(4n)) {
     margin-right: var(--item-set-gap);
-}
+  }
 
-.team-item:not(:nth-last-child(-n + 4)) {
+  &:not(:nth-last-child(-n + 4)) {
     margin-bottom: var(--item-set-gap);
+  }
 }
 
-.team .content-wrap {
-    padding-top: 30px;
-    padding-bottom: 30px;
+.employee-meta {
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-align: center;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
-.team .name {
-    margin-bottom: 10px;
+.employee-name {
+  margin-bottom: 10px;
 
-    font-size: 16px;
-    font-weight: 500;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.team .position {
-    margin-bottom: 16px;
-    font-size: 16px;
+.employee-position {
+  margin-bottom: 16px;
+  font-size: 16px;
 
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }

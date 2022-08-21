@@ -1,70 +1,69 @@
 .page-header {
-    border-bottom: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
 }
 
 .page-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-nav,
 .auth-nav,
 .menu-list {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
 
-    color: var(--black-color);
+  color: var(--black-color);
 }
 
-.menu-item:not(:last-child),
-.auth-item:not(:last-child) {
+.menu-item,
+.auth-item {
+  &:not(:last-child) {
     margin-right: 50px;
+  }
 }
 
 .menu-link,
 .auth-link {
-    display: inline-flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 31px;
+  display: inline-flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 31px;
 
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-link {
-    position: relative;
-    color: var(--primary-text-color);
+  position: relative;
+  color: var(--primary-text-color);
 
-    transition: color var(--duration) var(--timing-func);
+  transition: color var(--duration) var(--timing-func);
 }
 
 .auth-link {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 
-    transition: color var(--duration) var(--timing-func);
-}
-
-.menu-link:hover,
-.menu-link:focus,
-.auth-link:hover,
-.auth-link:focus {
-    color: var(--accent-color);
+  transition: color var(--duration) var(--timing-func);
 }
 
 .current {
-    color: var(--accent-color);
-}
+  color: var(--accent-color);
 
-.current::after {
+  &::after {
     content: '';
 
     position: absolute;
@@ -75,10 +74,11 @@
 
     background-color: currentColor;
     border-radius: 2px;
+  }
 }
 
 .auth-link-icon {
-    margin-right: 10px;
+  margin-right: 10px;
 
-    fill: currentColor;
+  fill: currentColor;
 }

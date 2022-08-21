@@ -1,35 +1,35 @@
 .client-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: var(--item-set-gap);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--item-set-gap);
 }
 
 .client-list-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
 
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
 
-    transition: border-color var(--duration) var(--timing-func);
-}
+  transition: border-color var(--duration) var(--timing-func);
 
-.client-list-link:hover,
-.client-list-link:focus {
+  &:hover,
+  &:focus {
     border-color: var(--accent-color);
+  }
 }
 
 .client-logo {
-    fill: var(--icon-color);
+  fill: var(--icon-color);
 
-    transition: fill var(--duration) var(--timing-func);
-}
+  transition: fill var(--duration) var(--timing-func);
 
-.client-list-link:hover .client-logo,
-.client-list-link:focus .client-logo {
+  .client-list-link:hover &,
+  .client-list-link:focus & {
     fill: var(--accent-color);
+  }
 }
