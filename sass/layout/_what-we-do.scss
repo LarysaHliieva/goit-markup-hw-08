@@ -1,0 +1,29 @@
+.directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--item-set-gap);
+}
+
+.direction {
+    position: relative;
+
+    flex-basis: calc((100% - 2 * var(--item-set-gap)) / 3);
+}
+
+.direction-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+    background-color: var(--bg-color-theme-dark-opacity);
+}

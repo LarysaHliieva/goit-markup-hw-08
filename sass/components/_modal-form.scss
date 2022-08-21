@@ -1,0 +1,136 @@
+.modal-desk {
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form-field+.modal-form-field {
+    margin-top: 10px;
+}
+
+.modal-form-input-desk {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--secondary-text-color);
+}
+
+.modal-form-input-wrapper {
+    position: relative;
+    display: block;
+}
+
+.modal-form-input,
+.modal-form-massage {
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+
+    transition: border-color var(--duration) var(--timing-func);
+}
+
+.modal-form-input {
+    height: 40px;
+    padding: 12px 16px 12px 42px;
+}
+
+.modal-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: block;
+
+    transition: fill var(--duration) var(--timing-func);
+}
+
+.modal-form-input-wrapper:focus-within .modal-form-icon {
+    fill: var(--accent-color);
+}
+
+.modal-form-massage {
+    display: block;
+    height: 120px;
+    padding: 12px 16px;
+
+    resize: none;
+}
+
+.modal-form-massage::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: var(--placeholder-color);
+}
+
+.modal-form-input:focus,
+.modal-form-massage:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.modal-form-btn {
+    align-self: center;
+
+    margin-top: 30px;
+}
+
+.modal-form-check-desc {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+.modal-form-check-desc::before {
+    content: '';
+
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border-radius: 2px;
+    border: 2px solid var(--primary-text-color);
+
+    transition: border-color var(--duration) var(--timing-func),
+        background-color var(--duration) var(--timing-func);
+
+    cursor: pointer;
+}
+
+.modal-form-check:checked+.modal-form-check-desc::before {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: contain;
+}
+
+.contract-link {
+    color: var(--accent-color);
+}
