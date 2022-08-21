@@ -677,11 +677,11 @@ body {
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter-list__btn {
   min-width: 70px;
   padding: 6px 22px;
   border: none;
@@ -695,13 +695,13 @@ body {
   box-shadow: none;
   transition: color var(--duration) var(--timing-func), background-color var(--duration) var(--timing-func), box-shadow var(--duration) var(--timing-func);
 }
-.filter-btn:hover, .filter-btn:focus {
+.filter-list__btn:hover, .filter-list__btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.filter-btn-active {
+.filter-list__btn_active {
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -714,18 +714,18 @@ body {
   margin-left: calc(-1 * var(--item-set-gap));
 }
 
-.gallery-item {
+.gallery__item {
   flex-basis: calc((100% - 3 * var(--item-set-gap)) / 3);
   margin-top: var(--item-set-gap);
   margin-left: var(--item-set-gap);
   box-shadow: none;
   transition: box-shadow var(--duration) var(--timing-func);
 }
-.gallery-item:hover {
+.gallery__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.gallery-img-wrap {
+.gallery__img-wrap {
   position: relative;
   overflow: hidden;
 }
@@ -746,31 +746,33 @@ body {
   transform: translateY(100%);
   transition: transform var(--duration) var(--timing-func);
 }
-.gallery-item:hover .overlay {
+.gallery__item:hover .overlay {
   transform: translateY(0);
 }
 
-.overlay-text {
+.overlay__text {
   margin-top: auto;
   margin-bottom: auto;
   width: 100%;
   padding: 24px;
 }
 
-.gallery-content {
+.gallery__content {
   padding: 20px 24px;
   border-width: 0 1px 1px 1px;
   border-style: solid;
   border-color: var(--primary-border-color);
 }
-.gallery-content > .caption {
+
+.gallery__caption {
   margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.gallery-content > .category {
+
+.gallery__category {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
