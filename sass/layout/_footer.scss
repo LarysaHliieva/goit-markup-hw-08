@@ -5,7 +5,7 @@
   background-color: var(--bg-color-theme-dark);
 }
 
-.footer-container {
+.page-footer__container {
   display: flex;
   justify-content: space-between;
 }
@@ -16,22 +16,11 @@
   letter-spacing: 0.03em;
 }
 
-.adress-item:not(:last-child) {
+.adress-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address {
-  color: var(--white-color);
-
-  transition: color var(--duration) var(--timing-func);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-
-.contact {
+.adress-list__link {
   color: var(--secondary-text-color-theme-dark);
 
   transition: color var(--duration) var(--timing-func);
@@ -42,12 +31,15 @@
   }
 }
 
-.social-block,
-.form-block {
+.adress-list__link_main {
+  color: var(--white-color);
+}
+
+.block {
   padding-top: 12px;
 }
 
-.block-desk {
+.block__desk {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -66,7 +58,7 @@
   gap: 12px;
 }
 
-.footer-form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;

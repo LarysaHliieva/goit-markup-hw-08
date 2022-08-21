@@ -9,11 +9,11 @@
   letter-spacing: 0.03em;
 }
 
-.accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
-.header-logo {
+.page-header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-right: 93px;
@@ -21,7 +21,7 @@
   color: var(--black-color);
 }
 
-.footer-logo {
+.page-footer__logo {
   margin-bottom: 20px;
 
   color: var(--white-color);
