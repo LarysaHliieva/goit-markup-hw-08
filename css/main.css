@@ -799,12 +799,11 @@ body {
 
 .filter-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 50px;
-}
-
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
+  column-gap: 8px;
+  row-gap: 15px;
+  margin-bottom: 40px;
 }
 
 .filter-list__btn {
@@ -816,6 +815,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  white-space: nowrap;
   color: var(--primary-text-color);
   background-color: var(--secondary-bg-color);
   box-shadow: none;
@@ -903,4 +903,15 @@ body {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
 }/*# sourceMappingURL=main.css.map */
