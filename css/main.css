@@ -845,6 +845,8 @@ body {
 }
 
 .gallery__img-wrap {
+  margin-left: -1px;
+  margin-right: -1px;
   position: relative;
   overflow: hidden;
 }
