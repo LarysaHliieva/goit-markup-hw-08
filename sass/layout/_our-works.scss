@@ -3,7 +3,6 @@
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   column-gap: 8px;
   row-gap: 15px;
 
@@ -130,6 +129,8 @@
 
 @media screen and (min-width: 768px) {
   .filter-list {
+    justify-content: center;
+
     margin-bottom: 30px;
   }
 
