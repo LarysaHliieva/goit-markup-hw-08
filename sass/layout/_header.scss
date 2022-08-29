@@ -8,19 +8,19 @@
   align-items: center;
 }
 
-.mobile-toggle {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-
-  border: none;
-  background-color: transparent;
-}
-
 @media screen and (max-width: 767px) {
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+  }
+
   .menu-list {
     display: none;
   }
@@ -31,6 +31,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
   .page-nav,
   .menu-list {
     display: flex;
