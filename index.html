@@ -41,7 +41,12 @@
           </ul>
         </nav>
 
-        <button type="button" class="menu-toggle">
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -562,9 +567,9 @@
     </footer>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu-backdrop">
+    <div class="mobile-menu-backdrop js-menu-container">
       <div class="container mobile-menu-container">
-        <button class="menu-toggle">
+        <button class="menu-toggle js-close-menu">
           <svg class="mobile-menu-close-icon" width="40" height="40">
             <use href="./images/icons.svg#icon-close-mobile-menu"></use>
           </svg>
@@ -703,5 +708,6 @@
     </div> -->
 
     <!-- <script src="./js/modal.js"></script> -->
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

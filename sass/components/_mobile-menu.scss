@@ -12,6 +12,13 @@
       0px 1px 3px rgba(0, 0, 0, 0.16);
 
     z-index: 200;
+
+    transform: translateX(100%);
+    transition: transform var(--duration) var(--timing-func);
+
+    &.is-open {
+      transform: translateX(0);
+    }
   }
 
   .mobile-menu-container {
