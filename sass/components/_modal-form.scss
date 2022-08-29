@@ -98,7 +98,7 @@
   align-items: center;
   margin-top: 20px;
 
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -106,6 +106,8 @@
 
   &::before {
     content: '';
+
+    flex-shrink: 0;
 
     display: block;
     width: 16px;
@@ -127,6 +129,10 @@
     background-image: url(../images/icon-check.svg);
     background-repeat: no-repeat;
     background-position: contain;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
