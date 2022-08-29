@@ -1,19 +1,25 @@
 .backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100vw;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
 
-    background-color: var(--black-color-backdrop);
+  background-color: var(--black-color-backdrop);
 
-    transition: opacity var(--duration) var(--timing-func),
-        visibility var(--duration) var(--timing-func);
+  transition: opacity var(--duration) var(--timing-func),
+    visibility var(--duration) var(--timing-func);
+
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

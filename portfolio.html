@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- HEADER -->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo page-header__logo link" href="./index.html"
@@ -40,18 +40,29 @@
           </ul>
         </nav>
 
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+
         <ul class="auth-nav list">
           <li class="auth-item">
-            <a class="auth-link link" href="mailto:info@devstudio.com">
-              <svg class="auth-link-icon" width="16" height="12">
+            <a class="auth-link auth-link-first link" href="mailto:info@devstudio.com">
+              <svg class="auth-link-icon auth-link-icon-envelope" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
           <li class="auth-item">
-            <a class="auth-link link" href="tel:+380961111111">
-              <svg class="auth-link-icon" width="10" height="16">
+            <a class="auth-link auth-link-last link" href="tel:+380961111111">
+              <svg class="auth-link-icon auth-link-icon-smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,7 +70,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- OUR WORKS -->
@@ -109,12 +120,6 @@
                   <img src="./images/works/work-1.jpg" alt="на ноутбуці відкритий сайт" />
                 </picture>
 
-                <!-- <img
-                  src="./images/works/work-1.jpg"
-                  alt="на ноутбуці відкритий сайт"
-                  width="370"
-                  height="294"
-                /> -->
                 <div class="overlay">
                   <p class="overlay__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -442,7 +447,7 @@
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container page-footer__container">
         <div>
           <a class="logo page-footer__logo link" href="./index.html"
@@ -471,7 +476,7 @@
           </address>
         </div>
 
-        <div class="block">
+        <div class="block block-tablet-social">
           <p class="block__desk">Приєднуйтесь</p>
           <ul class="social-list list">
             <li>
@@ -509,7 +514,7 @@
           <p class="block__desk">Підпишіться на розсилку</p>
           <form class="footer-form">
             <input type="email" name="user-email" class="footer-form__input" placeholder="E-mail" />
-            <button type="submit" class="btn btn_with_icon">
+            <button type="submit" class="btn btn_with_icon footer-form__btn">
               Підписатися
               <svg class="btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -518,6 +523,81 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-backdrop js-menu-container">
+      <div class="container mobile-menu-container">
+        <button class="menu-toggle js-close-menu">
+          <svg class="mobile-menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu list">
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link" href="./index.html">Студія</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a class="mobile-menu-link link current" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-item"><a class="mobile-menu-link link" href="">Контакти</a></li>
+        </ul>
+
+        <ul class="mobile-auth-nav list">
+          <li class="mobile-auth-item">
+            <a class="mobile-auth-link mobile-auth-link-tel link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-auth-item">
+            <a class="mobile-auth-link link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mobile-social-list list">
+          <li>
+            <a
+              class="mobile-social-link link"
+              href="https://Instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-social-link link"
+              href="https://Twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-social-link link"
+              href="https://Facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              class="mobile-social-link link"
+              href="https://LinkedIn.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
